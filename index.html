@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="./assets/logo.jpg" alt="个人Logo" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#blog">博客</a></li>
+            <li><a href="#shop">商店</a></li>
+            <li><a href="#ai">AI助手</a></li>
+            <li><a href="#contact">联系我</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- 各个部分的容器 -->
+    <main>
+        <section id="home" class="section home-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="profile-image">
+                        <img src="./assets/profile.jpg" alt="个人照片">
+                    </div>
+                    <h1 class="hero-title">你的名字</h1>
+                    <p class="hero-subtitle">全栈开发工程师 | AI研究者 | 技术博主</p>
+                    <p class="hero-description">
+                        欢迎来到我的个人网站！在这里，我分享技术经验、生活感悟，并提供优质的产品与服务。
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">了解更多</a>
+                        <a href="#contact" class="btn btn-secondary">联系我</a>
+                    </div>
+                </div>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <i class="fas fa-code"></i>
+                        <h3>技术博客</h3>
+                        <p>分享编程技术和开发经验</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>精品商城</h3>
+                        <p>优质教程</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI助手</h3>
+                        <p>智能问答和技术支持</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="about-container">
+                <h2 class="section-title">关于我</h2>
+                
+                <!-- 个人信息栏 -->
+                <div class="about-info">
+                    <div class="about-text">
+                        <h3>个人简介</h3>
+                        <p>我是一名充满激情的全栈开发工程师，专注于Web开发和人工智能领域。拥有多年的开发经验，热爱技术创新和分享。</p>
+                    </div>
+                    <div class="skills">
+                        <h3>专业技能</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <span class="skill-name">前端开发</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%">90%</div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">后端开发</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">人工智能</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 时间轴 -->
+                <div class="timeline">
+                    <h3>职业经历</h3>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>高级开发工程师</h4>
+                                <p class="timeline-date">2020 - 至今</p>
+                                <p>负责公司核心产品的架构设计和开发，带领团队完成多个重要项目。</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>全栈开发工程师</h4>
+                                <p class="timeline-date">2018 - 2020</p>
+                                <p>参与多个大型Web应用的开发，负责前后端架构设计和实现。</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>前端开发工程师</h4>
+                                <p class="timeline-date">2016 - 2018</p>
+                                <p>专注于用户界面开发，提升用户体验和页面性能优化。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section blog-section">
+            <div class="blog-container">
+                <h2 class="section-title">博客文章</h2>
+                
+                <!-- 博客控制面板 -->
+                <div class="blog-controls">
+                    <div class="blog-search">
+                        <input type="text" placeholder="搜索文章..." id="blog-search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="blog-categories">
+                        <select id="category-filter">
+                            <option value="">所有分类</option>
+                            <option value="tech">技术</option>
+                            <option value="life">生活</option>
+                            <option value="career">职场</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary new-post-btn" id="new-post-btn">
+                        <i class="fas fa-plus"></i> 发布文章
+                    </button>
+                </div>
+
+                <!-- 文章列表 -->
+                <div class="blog-posts">
+                    <!-- 示例文章 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://via.placeholder.com/300x200" alt="文章配图">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">技术</span>
+                                <span class="post-date">2024-03-20</span>
+                            </div>
+                            <h3 class="post-title">深入理解JavaScript异步编程</h3>
+                            <p class="post-excerpt">
+                                本文将详细介绍JavaScript中的异步编程概念，包括Promise、async/await等重要特性...
+                            </p>
+                            <div class="post-footer">
+                                <div class="post-stats">
+                                    <span><i class="fas fa-eye"></i> 1.2k</span>
+                                    <span><i class="fas fa-comment"></i> 8</span>
+                                    <span><i class="fas fa-heart"></i> 36</span>
+                                </div>
+                                <a href="#" class="read-more">阅读全文</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 发布文章对话框 -->
+                <div class="modal" id="post-modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h3>发布新文章</h3>
+                        <form id="post-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="文章标题" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">选择分类</option>
+                                    <option value="tech">技术</option>
+                                    <option value="life">生活</option>
+                                    <option value="career">职场</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="文章内容" rows="10" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="昵称（可选）">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="邮箱（可选）">
+                            </div>
+                            <button type="submit" class="btn btn-primary">发布</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="section shop-section">
+            <div class="shop-container">
+                <h2 class="section-title">精品商城</h2>
+                
+                <!-- 商店控制面板 -->
+                <div class="shop-controls">
+                    <div class="shop-search">
+                        <input type="text" placeholder="搜索商品..." id="shop-search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="shop-categories">
+                        <select id="shop-category-filter">
+                            <option value="">所有分类</option>
+                            <option value="digital">数字产品</option>
+                            <option value="course">在线课程</option>
+                            <option value="ebook">电子书籍</option>
+                        </select>
+                    </div>
+                    <div class="shop-cart">
+                        <button class="btn btn-secondary cart-btn" id="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 商品列表 -->
+                <div class="products-grid">
+                    <!-- 示例商品 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200" alt="商品图片">
+                            <div class="product-tags">
+                                <span class="tag-new">新品</span>
+                                <span class="tag-hot">热销</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Web开发实战课程</h3>
+                            <div class="product-meta">
+                                <span class="product-category">在线课程</span>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                            </div>
+                            <p class="product-description">
+                                从零开始学习Web开发，包含HTML、CSS、JavaScript等核心技术...
+                            </p>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-now">¥299</span>
+                                    <span class="price-original">¥399</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-cart-plus"></i> 加入购物车
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 更多商品卡 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200" alt="商品图片">
+                            <div class="product-tags">
+                                <span class="tag-hot">热销</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">AI编程助手高级版</h3>
+                            <div class="product-meta">
+                                <span class="product-category">数字产品</span>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                            </div>
+                            <p class="product-description">
+                                智能代码补、代码优化建议、自动化测试生成...
+                            </p>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-now">¥199</span>
+                                    <span class="price-original">¥259</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-cart-plus"></i> 加入购物车
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 购物车侧边栏 -->
+                <div class="cart-sidebar" id="cart-sidebar">
+                    <div class="cart-header">
+                        <h3>购物车</h3>
+                        <button class="close-cart">&times;</button>
+                    </div>
+                    <div class="cart-items">
+                        <!-- 购物车为空时显示 -->
+                        <div class="cart-empty">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>购物车是空的</p>
+                        </div>
+                        <!-- 购物车商品将在这里动态添加 -->
+                    </div>
+                    <div class="cart-footer">
+                        <div class="cart-total">
+                            <span>总计:</span>
+                            <span class="total-amount">¥0</span>
+                        </div>
+                        <button class="btn btn-primary checkout-btn">
+                            结算
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai" class="section ai-section">
+            <div class="ai-container">
+                <h2 class="section-title">AI助手</h2>
+                
+                <div class="ai-chat-container">
+                    <!-- AI助手介绍 -->
+                    <div class="ai-intro">
+                        <div class="ai-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="ai-info">
+                            <h3>智能助手</h3>
+                            <p>你好！我是一个AI助手，可以回答你的问题，提供技术支持，或者简单聊天。</p>
+                            <div class="ai-features">
+                                <span><i class="fas fa-code"></i> 技术咨询</span>
+                                <span><i class="fas fa-book"></i> 学习指导</span>
+                                <span><i class="fas fa-comments"></i> 日常交流</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 聊天窗口 -->
+                    <div class="chat-window">
+                        <div class="chat-messages" id="chat-messages">
+                            <!-- 默认欢迎消息 -->
+                            <div class="message ai-message">
+                                <div class="message-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-text">
+                                        你好！我是AI助手。有什么我可以帮你的吗？
+                                    </div>
+                                    <div class="message-time">现在</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 输入区域 -->
+                        <div class="chat-input-area">
+                            <div class="input-wrapper">
+                                <textarea 
+                                    id="chat-input" 
+                                    placeholder="输入你的问题..." 
+                                    rows="1"
+                                ></textarea>
+                                <button class="send-btn" id="send-message">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="input-suggestions">
+                                <button class="suggestion-btn">如何学习编程？</button>
+                                <button class="suggestion-btn">推荐一些学习资源</button>
+                                <button class="suggestion-btn">介绍你自己</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="contact-container">
+                <h2 class="section-title">联系我</h2>
+                
+                <!-- 联系方式卡片 -->
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>电子邮件</h3>
+                        <p>duke6372@126.com</p>
+                        <a href="mailto:duke6372@126.com" class="contact-link">发送邮件</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <h3>微信</h3>
+                        <p>扫描二维码添加</p>
+                        <div class="qr-code">
+                            <img src="./assets/wechat-qr.jpg" alt="微信二维码">
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-qq"></i>
+                        </div>
+                        <h3>QQ</h3>
+                        <p>123456789</p>
+                        <a href="tencent://message/?uin=123456789" class="contact-link">发起会话</a>
+                    </div>
+                </div>
+
+                <!-- 社交媒体链接 -->
+                <div class="social-links">
+                    <a href="https://weibo.com/yourprofile" class="social-link" target="_blank">
+                        <i class="fab fa-weibo"></i>
+                        <span>微博</span>
+                    </a>
+                    <a href="https://github.com/yourprofile" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.zhihu.com/people/yourprofile" class="social-link" target="_blank">
+                        <i class="fab fa-zhihu"></i>
+                        <span>知乎</span>
+                    </a>
+                    <a href="https://space.bilibili.com/yourprofile" class="social-link" target="_blank">
+                        <i class="fab fa-bilibili"></i>
+                        <span>哔哩哔哩</span>
+                    </a>
+                </div>
+
+                <!-- 联系表单 -->
+                <div class="contact-form-container">
+                    <h3>给我留言</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="你的名字" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="你的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="主题">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="你的留言" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送留言</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
